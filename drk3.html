@@ -1,19 +1,236 @@
-<div class="row">
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="col-md-4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medilop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
 
-<div class="p-3 bg-primary text white mb-3">Column 1</div>
+        .stats {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
 
-<div class="col-md-4">
+        .service-card, .doctor-card {
+            margin-bottom: 20px;
+        }
 
-<div class="p-3 bg-primary text-white mb-3" Column 2</div>
+        .testimonial, .doctor-card {
+            text-align: center;
+        }
 
-</div>
+        .testimonial img, .doctor-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
 
-<div class="col-md-4">
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Medilop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Facility</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<div class="p-3 bg-primary text white mb-3" Column 3</div>
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>We Care About Your Health</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                vestibulum.</p>
+            <form class="form-inline justify-content-center">
+                <input class="form-control mr-2" type="email" placeholder="Enter your email">
+                <button class="btn btn-dark" type="submit">Sign Up</button>
+            </form>
+            <button class="btn btn-secondary mt-3">Read More</button>
+            <button class="btn btn-secondary mt-3">Play Video</button>
+        </div>
+    </section>
 
-</div>
+    <section class="stats text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h2>95k</h2>
+                    <p>Doctors</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>1,500+</h2>
+                    <p>Specialists</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>3,000+</h2>
+                    <p>Happy Patients</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>100+</h2>
+                    <p>Countries</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <section class="services py-5">
+        <div class="container">
+            <h2 class="text-center">Our Best Services</h2>
+            <div class="row">
+                <div class="col-6 col-md-3 service-card">
+                    <h3>All Specialists</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-6 col-md-3 service-card">
+                    <h3>Private & Secure</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-6 col-md-3 service-card">
+                    <h3>Million Customers</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-6 col-md-3 service-card">
+                    <h3>Chatbot Support</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-links py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <a href="#">Doctors</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#">Consult</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#">Pharmacy</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#">Diagnostics</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="doctors py-5">
+        <div class="container">
+            <h2 class="text-center">Our Best Doctors</h2>
+            <div class="row">
+                <div class="col-6 col-md-3 doctor-card">
+                    <img src="doctor1.jpg" alt="Dr. Alice">
+                    <h3>Dr. Alice</h3>
+                    <p>Ph.D.</p>
+                </div>
+                <div class="col-6 col-md-3 doctor-card">
+                    <img src="doctor2.jpg" alt="Dr. Susan">
+                    <h3>Dr. Susan</h3>
+                    <p>Ph.D.</p>
+                </div>
+                <div class="col-6 col-md-3 doctor-card">
+                    <img src="doctor3.jpg" alt="Dr. Joseph">
+                    <h3>Dr. Joseph</h3>
+                    <p>Ph.D.</p>
+                </div>
+                <div class="col-6 col-md-3 doctor-card">
+                    <img src="doctor4.jpg" alt="Dr. Maria">
+                    <h3>Dr. Maria</h3>
+                    <p>Ph.D.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Easy Steps And Get Your Solution</h2>
+            <div class="row text-center">
+                <div class="col-6 col-md-3">
+                    <img src="step1.jpg" alt="Step 1">
+                    <p>Check Doctor's Profile</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="step2.jpg" alt="Step 2">
+                    <p>Request Consultation</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="step3.jpg" alt="Step 3">
+                    <p>Receive Your Consultation</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="step4.jpg" alt="Step 4">
+                    <p>Get Your Solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center">What People Say About Us</h2>
+            <div class="row">
+                <div class="col-6 col-md-3 testimonial">
+                    <img src="person1.jpg" alt="Person 1">
+                    <p>Name</p>
+                </div>
+                <div class="col-6 col-md-3 testimonial">
+                    <img src="person2.jpg" alt="Person 2">
+                    <p>Name</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="register py-5 bg-light text-center">
+        <div class="container">
+            <h2>Want to Register Easily?</h2>
+            <button class="btn btn-primary">Submit Now</button>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; Medilop. Designed by Your Name. All rights reserved.</p>
+        </div
